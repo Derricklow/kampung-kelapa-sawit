@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Kelapa Sawit</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="fontawesome-pro/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header fixed w-full z-40 border-b-3 border-[rgba(255,255,255,.1)]">
+        <div class="bg-dark xl:px-24 lg:px-24 px-0 xl px-6 w-full h-full">
+            <nav class="bg-transparent flex justify-between items-center h-full">
+                <a class="text-3xl font-semibold leading-none" href="/">Let's Art Sawit</a>
+                <div class="h-full lg:block hidden">
+                    <ul class="lg:flex md:flex hidden gap-10 h-full">
+                        <li class="item h-full flex items-center relative cursor-pointer">
+                            <a class="uppercase text-md">About</a>
+                        </li>
+                        <li class="item h-full flex items-center relative cursor-pointer">
+                            <a class="uppercase text-md">Services</a>
+                        </li>
+                        <li class="item h-full flex items-center relative cursor-pointer">
+                            <a class="uppercase text-md">Our Works</a>
+                        </li>
+                        <li class="item h-full flex items-center relative cursor-pointer">
+                            <a class="uppercase text-md">Reviews</a>
+                        </li>
+                        <li class="item h-full flex items-center relative cursor-pointer">
+                            <a class="uppercase text-md">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center py-2 px-3">
+                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="w-full h-dvh relative">
+            <div class="absolute top-0 bottom-0 left-0 right-0 h-full bg-[rgba(0,0,0,.5)]"></div> 
+            <video class="w-full h-full object-cover" src="public/video/LetArtSawit.mp4" autoplay muted loop></video>
+            <div class="absolute top-[50%] left-[50%] -translate-1/2">
+                <h1 class="animate-fadeIn text-center text-white font-bold text-5xl uppercase text-nowrap mb-6 text-shadow-lg text-shadow-grey-500" style="--fadeInDuration: 2s;">Welcome to Kelapa Sawit</h1>
+                <p class="animate-fadeIn text-center text-white font-bold text-4xl capitalize text-nowrap text-shadow-lg text-shadow-grey-500" style="--fadeInDuration: 2.25s;">Comes join us to make some fun & Let's build the most beautiful place in the world</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-6 bg-black">
+            <span class="text-gray-500">© 2024 Derrick Low. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
