@@ -84,18 +84,21 @@ html {
 }
 
 #section-two-img::before {
-    width: 280px;
-    height: 370px;
+    width: 60%;
+    height: 60%;
     border: 8px dashed orange;
-    top: 0;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 
 #section-two-img::after {
-    width: 360px;
-    height: 300px;
-    border: 7px dashed orange;
-    bottom: 0;
-    right: 0;
+    width: 60%;
+    height: 60%;
+    border: 7px dashed red;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
 }
 
 .animate-fadeIn {
