@@ -80,3 +80,21 @@ video.addEventListener("timeupdate", () => {
         hideCaption();
     }
 });
+
+const swiper = new Swiper('.swiper', {
+    // direction: 'vertical',
+    // loop: true,
+    // pagination: { el: '.swiper-pagination' },
+    // scrollbar: { el: '.swiper-scrollbar'},
+    slidesPerView: 3,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      0: { slidesPerView: 1.2 }, // small screen - show 1.2 cards
+      768: { slidesPerView: 2 }, // tablet
+      1024: { slidesPerView: 3 } // desktop
+    },
+    grabCursor: true,
+});

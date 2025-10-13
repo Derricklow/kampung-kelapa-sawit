@@ -20,6 +20,7 @@ html {
 .header {
     background: transparent;
     transition: background .3s ease-in-out;
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 .header a {
@@ -51,10 +52,13 @@ html {
 .header .navbar-burger {
     padding-block: 1.6rem;
     transition: padding-block .3s ease-in-out;
+    color: #FFFFFF;
 }
 
 .header.scrolled {
     background: var(--background-color);
+    border-bottom: 1px solid #EFEFEF;
+    box-shadow: 2px 2px 2px #EFEFEF;
 }
 
 .header.scrolled a {
@@ -71,8 +75,11 @@ html {
 }
 
 .header.scrolled .item:hover a{
-    color: ;
     transform: translate(0, -15%);
+}
+
+.header.scrolled .navbar-burger {
+    color: #000000;
 }
 
 #section-two-img::before, #section-two-img::after {
@@ -99,6 +106,11 @@ html {
     top: 60%;
     left: 60%;
     transform: translate(-50%, -50%);
+}
+
+.swiper-button-prev.top-version {
+    position: absolute;
+    top: 0;
 }
 
 .animate-fadeIn {
