@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="fontawesome-pro/css/all.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
     <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -65,56 +65,198 @@
             </div>
         </section>
         
-        <section class="xl:min-h-dvh lg:min-h-dvh flex justify-center items-center xl:py-20 lg:py-20 md:py-20 py-10 xl:px-0 lg:px-5 px-5">
-            <div class="xl:w-[1200px] lg:w-[960px]">
+        <section class="xl:min-h-[80dvh] flex justify-center items-center xl:pt-10 lg:pt-20 pt-20 xl:px-0 lg:px-5 px-5">
+            <div class="xl:w-[1200px] lg:w-[960px] w-full">
                 <div class="flex flex-wrap justify-center">
-                    <div id="section-two-img" class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full relative xl:pr-15">
-                        <div class="flex justify-center">
-                            <img class="z-10 xl:w-full lg:w-full w-full xl:h-full lg:h-full h-1/3" src="public/img/dance_lion.png">
+                    <div id="section-two-img" class="xl:w-1/2 lg:w-1/2 w-full relative xl:pr-15 lg:pr-10 xl:mb-0 lg:mb-0 md:mb-10 mb-15">
+                        <div class="flex flex-col xl:items-start lg:items-start md:items-center items-center overflow-hidden">
+                            <div class="xl:w-[70%] lg:w-[70%] md:w-[40%] w-[60%] xl:ms-0 lg:ms-0 md:-ms-[20%] -ms-[35%] mt-0 z-10">
+                                <img class="rounded-lg w-full object-cover aspect-square" src="./public/img/section_2_img_2.jpg">
+                            </div>
+                            <div class="xl:w-[55%] lg:w-[55%] md:w-[40%] w-[55%] ms-[35%] -mt-[25%] z-20">
+                                <img class="rounded-lg w-full object-cover aspect-square" src="./public/img/section_2_img_1.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div class="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full flex justify-center py-8 xl:pl-15">
+                    <div class="xl:w-1/2 lg:w-1/2 w-full flex justify-center xl:pl-15">
                         <div>
-                            <h5 class="xl:text-5xl lg:text-5xl text-4xl font-bold xl:mb-5 lg:mb-5 mb-3">Let Art Our Sawit</h5>
+                            <h5 class="xl:text-5xl lg:text-5xl text-4xl font-bold xl:mb-5 lg:mb-5 mb-3">
+                                Let's Art <span class="bg-linear-to-br from-red-500 to-orange-400 bg-clip-text text-transparent">Our Sawit</span>
+                            </h5>
                             <p class="xl:text-lg/9 lg:text-lg/9 text-md/8 mb-5 ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci id lacus facilisis lacinia. Curabitur fringilla mi id justo dictum, ac facilisis nulla pretium. Donec convallis convallis ligula, nec interdum leo eleifend ac. Nunc sed purus vel neque pretium dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci id lacus facilisis lacinia. Curabitur fringilla mi id justo dictum, ac facilisis nulla pretium. Donec convallis convallis ligula, nec interdum leo eleifend ac. Nunc sed purus vel neque pretium dignissim.
                             </p>
+                            <button class="py-5 px-8 bg-linear-to-br from-red-500 to-orange-400 text-white rounded-full cursor-pointer">
+                                <span class="me-3">Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="min-h-dvh flex justify-center items-center xl:py-20 lg:py-20 md:py-20 py-10 xl:px-0 lg:px-5 px-5">
-            <div class="xl:w-[1200px] lg:w-[960px]">
-                <div class="mb-15">
-                    <h3 class="uppercase text-center font-bold text-3xl">Let's Art Sawit Events</h3>
-                </div>
-                <div class="swiper w-full xl:h-[500px] lg:h-[300px]">
-                    <div class="swiper-button-prev top-version"></div>
-                    <div class="swiper-button-next top-version"></div>
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
+        <section class="flex justify-center items-center xl:pt-10 pb-15 lg:pt-20 pt-20 xl:px-0 lg:px-5 px-5">
+            <div class="xl:w-[1200px] lg:w-[960px] w-full relative">
+                <div class="flex justify-between">
+                    <div class="xl:mb-15 lg:mb-15 mb-8">
+                        <h3 class="uppercase font-bold xl:text-5xl lg:text-5xl text-4xl">Sawit Events</h3>
                     </div>
+                    <div class="swipper-custom-navigator xl:block lg:block md:block hidden">
+                        <div class="swiper-button-prev top-version"></div>
+                        <div class="swiper-button-next top-version"></div>
+                    </div>
+                </div>
+                <div class="swiper swiper-events w-full h-[300px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_1.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_2.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_2.jpg">
+                                </a>
+                            </div>
+                        </div> -->
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_3.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_4.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_5.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_5.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-full h-[300px]">
+                                <a target="_blank" href="public/img/event_5.jpg">
+                                    <img class="w-full h-full object-cover rounded-lg shadow-lg select-none" src="public/img/event_7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="swiper-pagination-event" class="swiper-pagination"></div>
+            </div>
+        </section>
 
-                    <div class="swiper-pagination"></div>
-                    <!-- <div class="swiper-scrollbar"></div> -->
+        <!-- <section class="xl:py-25 lg:pt-25 pt-20">
+            <div class="marquee" aria-label="Marquee demo">
+                <div class="marquee__track" id="marqueeTrack">
+                    <div class="marquee__item">
+                        <div class="xl:w-[200px] xl:h-[200px] mb-5">
+                            <img class="w-full h-full object-cover rounded-full" src="./public/img/our_hometown_kelapa_sawit.jpg">
+                        </div>
+                        <p class="text-2xl text-center">
+                            我們的故鄉<br>
+                            加拉巴沙威 2014
+                        </p>
+                    </div>
+                    <div class="marquee__item">
+                        <div class="xl:w-[200px] xl:h-[200px] mb-5">
+                            <img class="w-full h-full object-cover rounded-full" src="./public/img/pao_ka.jpg">
+                        </div>
+                        <p class="text-2xl text-center">26 跑咖</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="xl:my-20 lg:my-20 my-20 xl:px-0 lg:px-5 px-5 bg-gradient-to-b from-[#fff7f5] to-[#ffece6] overflow-hidden">
+            <div class="border-triangle-white"></div>
+            <div class="xl:min-h-[55dvh] flex justify-center items-end h-full">
+                <div class="xl:w-[1200px] lg:w-[960px] w-full">
+                    <div class="flex flex-wrap justify-center items-center">
+                        <div class="xl:w-1/2 lg:w-1/2 w-full relative xl:pr-15 lg:pr-10 xl:mb-0 lg:mb-0 md:mb-10 mb-15">
+                            <div class="round-shape"></div>
+                            <img src="./public/img/xiaohua_sign.png">
+                        </div>
+                        <div class="xl:w-1/2 lg:w-1/2 w-full flex justify-center xl:pl-15 relative">
+                            <div class="swiper speech-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="text-xl/9 text-gray-500 font-serif mb-5 leading-relaxed">
+                                            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit.”
+                                        </p>
+                                        <h5 class="text-xl font-bold mb-3" style="font-family: Manrope, sans-serif;">Choong Faa Wang</h5>
+                                        <h6 class="text-gray-500 font-[Manrope, sans-serif]">Village Head</h6>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="text-xl/9 text-gray-500 font-serif mb-5 leading-relaxed">
+                                            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit.”
+                                        </p>
+                                        <h5 class="text-xl font-bold mb-3" style="font-family: Manrope, sans-serif;">Choong Faa Wang</h5>
+                                        <h6 class="text-gray-500 font-[Manrope, sans-serif]">Village Head</h6>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="text-xl/9 text-gray-500 font-serif mb-5 leading-relaxed">
+                                            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit.”
+                                        </p>
+                                        <h5 class="text-xl font-bold mb-3" style="font-family: Manrope, sans-serif;">Choong Faa Wang</h5>
+                                        <h6 class="text-gray-500 font-[Manrope, sans-serif]">Village Head</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="swiper-pagination-speech" class="swiper-pagination xl:pl-15"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="min-h-dvh flex justify-center xl:py-20 lg:py-20 py-10 xl:px-0 lg:px-0 px-5">
+        <section class="xl:min-h-[90dvh] flex justify-center items-center xl:pt-10 lg:pt-20 pt-20 xl:px-0 lg:px-5 px-5"">
+            <div class="xl:w-[1200px] lg:w-[960px] w-full relative">
+                <div class="mb-15">
+                    <p class="capitalize text-center text-xl tracking-wider mb-5">Roar of Tradition, Dance of Joy</p>
+                    <h2 class="uppercase text-center font-bold text-3xl bg-linear-to-br from-red-500 to-orange-400 bg-clip-text text-transparent">Our Traditional Activity</h2>
+                </div>
+                <div class="flex justify-center gap-15">
+                    <div class="xl:w-1/3">123</div>
+                    <div class="xl:w-1/3">
+                        <div class="h-full">
+                            <img class="w-full h-full object-cover" src="./public/img/dance_lion.png">
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3">456</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact us -->
+        <section>
+            
+        </section>
+
+        <!-- observer -->
+        <section class="">
+            
+        </section>
+        <!-- Maybe This can put on another html to introduce the other people -->
+        <!-- <section class="min-h-dvh flex justify-center xl:pt-10 lg:pt-20 pt-20 xl:px-0 lg:px-0 px-5">
             <div class="xl:w-[1200px] lg:w-[960px]">
                 <div class="mb-15">
                     <p class="capitalize text-center text-xl mb-5">the people behind our success</p>
@@ -196,7 +338,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>

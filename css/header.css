@@ -1,0 +1,64 @@
+.header {
+    background: transparent;
+    transition: background .3s ease-in-out;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.header a {
+    color: #FFFFFF;
+    transition: color .3s ease-in-out;
+}
+
+.header .item {
+    padding-block: 1.6rem;
+    transition: padding-block .3s ease-in-out;
+}
+
+.header .item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 1px;
+    background: #FFFFFF;
+    transition: width .3s ease-in-out;
+}
+
+.header .item:hover::before{
+    width: 100%;
+}
+
+.header .navbar-burger {
+    padding-block: 1.6rem;
+    transition: padding-block .3s ease-in-out;
+    color: #FFFFFF;
+}
+
+.header.scrolled {
+    background: var(--background-color);
+/*    border-bottom: 1px solid #EFEFEF;*/
+/*    box-shadow: 2px 2px 2px #EFEFEF;*/
+}
+
+.header.scrolled a {
+    color: #000000;
+}
+
+.header.scrolled .item{
+    padding-block: 1rem;
+}
+
+.header.scrolled .item a {
+    font-weight: 400;
+    transition: transform .3s ease-in-out;
+}
+
+.header.scrolled .item:hover a{
+    transform: translate(0, -15%);
+}
+
+.header.scrolled .navbar-burger {
+    color: #000000;
+}

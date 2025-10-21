@@ -1,0 +1,48 @@
+/* Outer container: clip overflow */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 12px 0;
+}
+
+/* Track that will be animated */
+.marquee__track {
+    display: flex;
+    align-items: start;
+    gap: var(--gap, 5rem);
+    white-space: nowrap; /* ensure single-line flow */
+    flex-wrap: nowrap; /* important: prevent child shrinking */
+    will-change: transform; /* smoother transforms */
+    animation: marquee-scroll var(--speed, 20s) linear infinite; /* animation applied after JS duplication */
+}
+
+/* Marquee item */
+.marquee__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto; /* Do not shrink, keep intrinsic width */
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+}
+
+/* Pause on hover/focus for accessibility */
+/*.marquee:hover .marquee__track,
+.marquee:focus-within .marquee__track {
+    animation-play-state: paused;
+}*/
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+    .marquee__track { 
+        animation: none; 
+        transform: none; 
+    }
+}
+
+/* Keyframes: move from 0 to -50%. Works because we duplicate the inner set once. */
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
