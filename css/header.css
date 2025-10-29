@@ -26,6 +26,7 @@
     transition: width .3s ease-in-out;
 }
 
+.header .item.active::before,
 .header .item:hover::before{
     width: 100%;
 }
@@ -48,6 +49,13 @@
 
 .header.scrolled .item{
     padding-block: 1rem;
+}
+
+.header.scrolled .item.active a {
+    background: linear-gradient(#FB2C36, #FF8904);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .header.scrolled .item a {

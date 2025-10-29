@@ -63,3 +63,67 @@
   opacity: 1;
   transform: scale(1.3);
 }*/
+
+
+/* Index Page - Top Things To Do Swiper*/
+
+/* Top Thing Prev / Next Button */
+#top-things-swiper-prev svg, 
+#top-things-swiper-next svg {
+    display: none;
+}
+
+#top-things-swiper-prev, 
+#top-things-swiper-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 50%;
+    top: auto;
+    bottom: 50px;
+}
+
+#top-things-swiper-prev{ 
+    left: 330px; 
+}
+
+#top-things-swiper-next{ 
+    left: 400px; 
+}
+
+/* Top Thing swiper slide */
+#top-things-to-do .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+#top-things-to-do .swiper-slide img{
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 100%;
+    transition: all .6s ease;
+}
+
+@media (min-width: 1023px){
+    #top-things-to-do .swiper-slide img{
+        object-fit: cover;
+        aspect-ratio: 2 / 3;
+        width: 90%;
+        transition: all .6s ease;
+    }
+
+    #top-things-to-do .swiper-slide.swiper-slide-active img, 
+    #top-things-to-do .swiper-slide.swiper-slide-prev img{
+        width: 100%;
+        aspect-ratio: 9 / 16;
+    }
+}
+
+#top-things-to-do .swiper-wrapper {
+    --swiper-wrapper-transition-timing-function: linear;
+    transition-duration: .7s !important;
+}
+
+/* End Index (Top Things To Do Swiper) */
